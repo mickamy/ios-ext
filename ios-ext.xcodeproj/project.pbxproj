@@ -53,37 +53,37 @@
 		1E7F6FD5233E8816002447DE = {
 			isa = PBXGroup;
 			children = (
-				1E7F6FE1233E8816002447DE /* ios-ext */,
-				1E7F6FEC233E8816002447DE /* ios-extTests */,
-				1E7F6FE0233E8816002447DE /* Products */,
+				1E7F6FE1233E8816002447DE /* src */,
+				1E7F6FEC233E8816002447DE /* test */,
+				1E7F6FE0233E8816002447DE /* artifact */,
 			);
 			sourceTree = "<group>";
 		};
-		1E7F6FE0233E8816002447DE /* Products */ = {
+		1E7F6FE0233E8816002447DE /* artifact */ = {
 			isa = PBXGroup;
 			children = (
 				1E7F6FDF233E8816002447DE /* ios_ext.framework */,
 				1E7F6FE8233E8816002447DE /* ios-extTests.xctest */,
 			);
-			name = Products;
+			name = artifact;
 			sourceTree = "<group>";
 		};
-		1E7F6FE1233E8816002447DE /* ios-ext */ = {
+		1E7F6FE1233E8816002447DE /* src */ = {
 			isa = PBXGroup;
 			children = (
 				1E7F6FE2233E8816002447DE /* ios_ext.h */,
 				1E7F6FE3233E8816002447DE /* Info.plist */,
 			);
-			path = "ios-ext";
+			path = src;
 			sourceTree = "<group>";
 		};
-		1E7F6FEC233E8816002447DE /* ios-extTests */ = {
+		1E7F6FEC233E8816002447DE /* test */ = {
 			isa = PBXGroup;
 			children = (
 				1E7F6FED233E8816002447DE /* ios_extTests.swift */,
 				1E7F6FEF233E8816002447DE /* Info.plist */,
 			);
-			path = "ios-extTests";
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +162,7 @@
 				en,
 			);
 			mainGroup = 1E7F6FD5233E8816002447DE;
-			productRefGroup = 1E7F6FE0233E8816002447DE /* Products */;
+			productRefGroup = 1E7F6FE0233E8816002447DE /* artifact */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
