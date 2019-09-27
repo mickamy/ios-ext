@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E7F6FE9233E8816002447DE /* ios_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7F6FDF233E8816002447DE /* ios_ext.framework */; };
-		1E7F6FEE233E8816002447DE /* ios_extTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F6FED233E8816002447DE /* ios_extTests.swift */; };
 		1E7F6FF0233E8816002447DE /* ios_ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7F6FE2233E8816002447DE /* ios_ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		1E7F6FE2233E8816002447DE /* ios_ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_ext.h; sourceTree = "<group>"; };
 		1E7F6FE3233E8816002447DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E7F6FE8233E8816002447DE /* ios-extTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-extTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E7F6FED233E8816002447DE /* ios_extTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_extTests.swift; sourceTree = "<group>"; };
 		1E7F6FEF233E8816002447DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +78,6 @@
 		1E7F6FEC233E8816002447DE /* test */ = {
 			isa = PBXGroup;
 			children = (
-				1E7F6FED233E8816002447DE /* ios_extTests.swift */,
 				1E7F6FEF233E8816002447DE /* Info.plist */,
 			);
 			path = test;
@@ -201,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E7F6FEE233E8816002447DE /* ios_extTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
