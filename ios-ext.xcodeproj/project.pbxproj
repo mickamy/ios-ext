@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E087F03233E8FD40095AC4A /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F02233E8FD40095AC4A /* UIView+Constraint.swift */; };
+		1E087F07233E92E30095AC4A /* UIView+ConstraintTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F06233E92E30095AC4A /* UIView+ConstraintTest.swift */; };
+		1E087F0C233EA6ED0095AC4A /* CaseIterable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F0B233EA6ED0095AC4A /* CaseIterable+Equatable.swift */; };
+		1E087F0F233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F0E233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift */; };
 		1E7F6FE9233E8816002447DE /* ios_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7F6FDF233E8816002447DE /* ios_ext.framework */; };
 		1E7F6FF0233E8816002447DE /* ios_ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7F6FE2233E8816002447DE /* ios_ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -22,6 +26,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E087F02233E8FD40095AC4A /* UIView+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
+		1E087F06233E92E30095AC4A /* UIView+ConstraintTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintTest.swift"; sourceTree = "<group>"; };
+		1E087F0B233EA6ED0095AC4A /* CaseIterable+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseIterable+Equatable.swift"; sourceTree = "<group>"; };
+		1E087F0E233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseIterable+EquatableTest.swift"; sourceTree = "<group>"; };
 		1E7F6FDF233E8816002447DE /* ios_ext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ios_ext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7F6FE2233E8816002447DE /* ios_ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_ext.h; sourceTree = "<group>"; };
 		1E7F6FE3233E8816002447DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,29 +56,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E087F01233E8FC10095AC4A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1E087F02233E8FD40095AC4A /* UIView+Constraint.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1E087F04233E928F0095AC4A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1E087F06233E92E30095AC4A /* UIView+ConstraintTest.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1E087F0A233EA6DF0095AC4A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1E087F0B233EA6ED0095AC4A /* CaseIterable+Equatable.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		1E087F0D233EA7A70095AC4A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1E087F0E233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		1E7F6FD5233E8816002447DE = {
 			isa = PBXGroup;
 			children = (
+				1E7F6FE0233E8816002447DE /* artifact */,
 				1E7F6FE1233E8816002447DE /* src */,
 				1E7F6FEC233E8816002447DE /* test */,
-				1E7F6FE0233E8816002447DE /* artifact */,
 			);
 			sourceTree = "<group>";
 		};
 		1E7F6FE0233E8816002447DE /* artifact */ = {
 			isa = PBXGroup;
 			children = (
-				1E7F6FDF233E8816002447DE /* ios_ext.framework */,
 				1E7F6FE8233E8816002447DE /* ios-extTests.xctest */,
+				1E7F6FDF233E8816002447DE /* ios_ext.framework */,
 			);
 			name = artifact;
+			path = artifact;
 			sourceTree = "<group>";
 		};
 		1E7F6FE1233E8816002447DE /* src */ = {
 			isa = PBXGroup;
 			children = (
-				1E7F6FE2233E8816002447DE /* ios_ext.h */,
+				1E087F0A233EA6DF0095AC4A /* Foundation */,
+				1E087F01233E8FC10095AC4A /* UIKit */,
 				1E7F6FE3233E8816002447DE /* Info.plist */,
+				1E7F6FE2233E8816002447DE /* ios_ext.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -78,6 +121,8 @@
 		1E7F6FEC233E8816002447DE /* test */ = {
 			isa = PBXGroup;
 			children = (
+				1E087F0D233EA7A70095AC4A /* Foundation */,
+				1E087F04233E928F0095AC4A /* UIKit */,
 				1E7F6FEF233E8816002447DE /* Info.plist */,
 			);
 			path = test;
@@ -145,6 +190,7 @@
 				TargetAttributes = {
 					1E7F6FDE233E8816002447DE = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					1E7F6FE7233E8816002447DE = {
 						CreatedOnToolsVersion = 10.3;
@@ -191,6 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E087F03233E8FD40095AC4A /* UIView+Constraint.swift in Sources */,
+				1E087F0C233EA6ED0095AC4A /* CaseIterable+Equatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E087F0F233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift in Sources */,
+				1E087F07233E92E30095AC4A /* UIView+ConstraintTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
