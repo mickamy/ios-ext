@@ -18,15 +18,27 @@ extension CaseIterableEquatableTest {
         case one, two, three
     }
     
-    func test_Previous() {
-        XCTAssertTrue(Test.one.previous == nil)
-        XCTAssertTrue(Test.two.previous! == .one)
-        XCTAssertTrue(Test.three.previous! == .two)
+    func test_Next_Without_Circle() {
+        XCTAssertTrue(Test.one.next(circle: false) == .two)
+        XCTAssertTrue(Test.two.next(circle: false) == .three)
+        XCTAssertTrue(Test.three.next(circle: false) == nil)
     }
     
-    func test_Next() {
-        XCTAssertTrue(Test.one.next! == .two)
-        XCTAssertTrue(Test.two.next! == .three)
-        XCTAssertTrue(Test.three.next == nil)
+    func test_Next_With_Circle() {
+        XCTAssertTrue(Test.one.next(circle: true) == .two)
+        XCTAssertTrue(Test.two.next(circle: true) == .three)
+        XCTAssertTrue(Test.three.next(circle: true) == .one)
+    }
+    
+    func test_Previous_Without_Circle() {
+        XCTAssertTrue(Test.one.previous(circle: false) == nil)
+        XCTAssertTrue(Test.two.previous(circle: false) == .one)
+        XCTAssertTrue(Test.three.previous(circle: false) == .two)
+    }
+    
+    func test_Previous_With_Circle() {
+        XCTAssertTrue(Test.one.previous(circle: true) == .three)
+        XCTAssertTrue(Test.two.previous(circle: true) == .one)
+        XCTAssertTrue(Test.three.previous(circle: true) == .two)
     }
 }

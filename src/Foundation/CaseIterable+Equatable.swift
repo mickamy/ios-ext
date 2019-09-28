@@ -8,22 +8,30 @@
 
 import Foundation
 
-public extension CaseIterable where Self.AllCases.Element: Equatable {
-    var next: Self? {
-        var next: Bool = false
-        for item in Self.allCases {
-            if next { return item }
-            next = item == self
+public extension CaseIterable where Self: Equatable {
+    func next(circle: Bool = false) -> Self? {
+        let allCases = Self.allCases
+        let me = allCases.firstIndex(of: self)!
+        let next = allCases.index(after: me)
+        if circle && next == allCases.endIndex {
+            return allCases.first
         }
-        return nil
+        return allCases[safe: next]
     }
     
-    var previous: Self? {
-        var previous: Bool = false
-        for item in Self.allCases.reversed() {
-            if previous { return item }
-            previous = item == self
+    func previous(circle: Bool = false) -> Self? {
+        let allCases = Self.allCases.reversed()
+        let me = allCases.firstIndex(of: self)!
+        let next = allCases.index(after: me)
+        if circle && next == allCases.endIndex {
+            return allCases.first
         }
-        return nil
+        return allCases[safe: next]
+    }
+}
+
+public extension Collection {
+    subscript(safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
     }
 }
