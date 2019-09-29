@@ -11,6 +11,10 @@
 		1E087F07233E92E30095AC4A /* UIView+ConstraintTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F06233E92E30095AC4A /* UIView+ConstraintTest.swift */; };
 		1E087F0C233EA6ED0095AC4A /* CaseIterable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F0B233EA6ED0095AC4A /* CaseIterable+Equatable.swift */; };
 		1E087F0F233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F0E233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift */; };
+		1E087F13233F7EE00095AC4A /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F12233F7EE00095AC4A /* Array+Extension.swift */; };
+		1E087F1723406F850095AC4A /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F10233F7DB00095AC4A /* Collection+Extension.swift */; };
+		1E087F1823406FC00095AC4A /* Collection+ExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F1423406DF40095AC4A /* Collection+ExtensionTest.swift */; };
+		1E087F1A234070C00095AC4A /* Array+ExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E087F19234070C00095AC4A /* Array+ExtensionTest.swift */; };
 		1E7F6FE9233E8816002447DE /* ios_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7F6FDF233E8816002447DE /* ios_ext.framework */; };
 		1E7F6FF0233E8816002447DE /* ios_ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7F6FE2233E8816002447DE /* ios_ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -30,6 +34,10 @@
 		1E087F06233E92E30095AC4A /* UIView+ConstraintTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintTest.swift"; sourceTree = "<group>"; };
 		1E087F0B233EA6ED0095AC4A /* CaseIterable+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseIterable+Equatable.swift"; sourceTree = "<group>"; };
 		1E087F0E233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseIterable+EquatableTest.swift"; sourceTree = "<group>"; };
+		1E087F10233F7DB00095AC4A /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		1E087F12233F7EE00095AC4A /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		1E087F1423406DF40095AC4A /* Collection+ExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+ExtensionTest.swift"; sourceTree = "<group>"; };
+		1E087F19234070C00095AC4A /* Array+ExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ExtensionTest.swift"; sourceTree = "<group>"; };
 		1E7F6FDF233E8816002447DE /* ios_ext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ios_ext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7F6FE2233E8816002447DE /* ios_ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_ext.h; sourceTree = "<group>"; };
 		1E7F6FE3233E8816002447DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				1E087F0B233EA6ED0095AC4A /* CaseIterable+Equatable.swift */,
+				1E087F10233F7DB00095AC4A /* Collection+Extension.swift */,
+				1E087F12233F7EE00095AC4A /* Array+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -84,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				1E087F0E233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift */,
+				1E087F1423406DF40095AC4A /* Collection+ExtensionTest.swift */,
+				1E087F19234070C00095AC4A /* Array+ExtensionTest.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -103,7 +115,6 @@
 				1E7F6FE8233E8816002447DE /* ios-extTests.xctest */,
 				1E7F6FDF233E8816002447DE /* ios_ext.framework */,
 			);
-			name = artifact;
 			path = artifact;
 			sourceTree = "<group>";
 		};
@@ -239,6 +250,8 @@
 			files = (
 				1E087F03233E8FD40095AC4A /* UIView+Constraint.swift in Sources */,
 				1E087F0C233EA6ED0095AC4A /* CaseIterable+Equatable.swift in Sources */,
+				1E087F13233F7EE00095AC4A /* Array+Extension.swift in Sources */,
+				1E087F1723406F850095AC4A /* Collection+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +261,8 @@
 			files = (
 				1E087F0F233EA7BA0095AC4A /* CaseIterable+EquatableTest.swift in Sources */,
 				1E087F07233E92E30095AC4A /* UIView+ConstraintTest.swift in Sources */,
+				1E087F1823406FC00095AC4A /* Collection+ExtensionTest.swift in Sources */,
+				1E087F1A234070C00095AC4A /* Array+ExtensionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
